@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E92586AB1DACC718005E060B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92586AA1DACC718005E060B /* main.m */; };
+		E92586B31DAD0027005E060B /* NSObject+LKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = E92586B21DAD0027005E060B /* NSObject+LKVO.m */; };
+		E92586B71DAD0783005E060B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E92586B61DAD0783005E060B /* Person.m */; };
+		E9FAC1A21DB86C290016F619 /* LObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FAC1A11DB86C290016F619 /* LObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		E92586A71DACC718005E060B /* KVO_Simulate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVO_Simulate; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92586AA1DACC718005E060B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E92586B11DAD0027005E060B /* NSObject+LKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LKVO.h"; sourceTree = "<group>"; };
+		E92586B21DAD0027005E060B /* NSObject+LKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LKVO.m"; sourceTree = "<group>"; };
+		E92586B51DAD0783005E060B /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E92586B61DAD0783005E060B /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E9FAC1A01DB86C290016F619 /* LObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LObserver.h; sourceTree = "<group>"; };
+		E9FAC1A11DB86C290016F619 /* LObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				E92586AA1DACC718005E060B /* main.m */,
+				E92586B11DAD0027005E060B /* NSObject+LKVO.h */,
+				E92586B21DAD0027005E060B /* NSObject+LKVO.m */,
+				E9FAC1A01DB86C290016F619 /* LObserver.h */,
+				E9FAC1A11DB86C290016F619 /* LObserver.m */,
+				E92586B51DAD0783005E060B /* Person.h */,
+				E92586B61DAD0783005E060B /* Person.m */,
 			);
 			path = KVO_Simulate;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92586B71DAD0783005E060B /* Person.m in Sources */,
 				E92586AB1DACC718005E060B /* main.m in Sources */,
+				E92586B31DAD0027005E060B /* NSObject+LKVO.m in Sources */,
+				E9FAC1A21DB86C290016F619 /* LObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +234,7 @@
 		E92586AF1DACC718005E060B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +242,7 @@
 		E92586B01DACC718005E060B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -246,6 +266,7 @@
 				E92586B01DACC718005E060B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,4 +10,10 @@
 
 @interface NSObject (LKVO)
 
+- (void)l_addObserver:(NSObject *)observer withKeyPath:(NSString *)keyPath;
+
+- (void)l_observingWithKeyPath:(NSString *)keyPath object:(NSObject *)observed change:(NSDictionary *)change;
+
+- (void)l_removeObserver:(NSObject *)observer keyPath:(NSString *)keyPath;
+
 @end

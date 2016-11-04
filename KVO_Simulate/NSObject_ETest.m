@@ -6,4 +6,12 @@
 //  Copyright © 2016年 liangce. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NSObject_ETest.h"
+
+@implementation NSObject
+
+- (void)lione_test {
+    NSLog(@"asdgfasdg");
+}
+
+@end

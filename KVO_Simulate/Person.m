@@ -7,6 +7,13 @@
 //
 
 #import "Person.h"
+#import <objc/message.h>
+#import "NSObject+LKVO.h"
+
+@interface Person()
+
+@end
+
 
 @implementation Person
 

@@ -7,11 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+LKVO.h"
+#import "Person.h"
+#import "LObserver.h"
+#import <objc/message.h>
+#import <objc/runtime.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+
+        Person *person = [[Person alloc] init];
+        
+        LObserver *observer = [[LObserver alloc] init];
+        [person l_addObserver:observer withKeyPath:@"name"];
+        
+        person.name = @"Tom";
+        [person l_removeObserver:observer keyPath:@"name"];
+        
     }
     return 0;
 }

@@ -10,4 +10,9 @@
 
 @interface NSObject ()
 
+@property (nonatomic, strong) NSString *lione_str;
+
+- (void)lione_test;
+
+
 @end
